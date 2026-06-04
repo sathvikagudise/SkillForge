@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Professional Learning Platform Theme */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Professional Blue Primary */
+    --primary: 210 85% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft Secondary Surface */
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 215 25% 25%;
+
+    /* Muted Backgrounds */
+    --muted: 210 25% 95%;
+    --muted-foreground: 215 15% 50%;
+
+    /* Warm Accent */
+    --accent: 25 90% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 92%;
+    --ring: 210 85% 52%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar Design */
+    --sidebar-background: 215 25% 20%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 210 85% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 25%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 215 20% 30%;
+    --sidebar-ring: 210 85% 52%;
+
+    /* Custom Tokens */
+    --success: 145 65% 48%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 95% 55%;
+    --warning-foreground: 0 0% 100%;
+    --info: 200 85% 52%;
+    --info-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
